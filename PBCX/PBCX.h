@@ -10,6 +10,8 @@
 #define PBCX_API __declspec(dllimport)
 #endif
 
+#define PBCALL __stdcall
+
 // This class is exported from the PBCX.dll
 class PBCX_API CPBCX {
 public:
@@ -19,4 +21,4 @@ public:
 
 extern PBCX_API int nPBCX;
 
-PBCX_API int fnPBCX(void);
+PBCX_API int PBCALL fnPBCX(void);

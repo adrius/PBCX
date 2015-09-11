@@ -9,7 +9,7 @@
 PBCX_API int nPBCX=0;
 
 // This is an example of an exported function.
-PBCX_API int fnPBCX(void)
+PBCX_API int PBCALL fnPBCX(void)
 {
 	return 42;
 }

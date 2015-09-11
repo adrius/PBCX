@@ -39,4 +39,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="PBCX.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>
