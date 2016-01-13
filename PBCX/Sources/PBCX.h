@@ -1,3 +1,6 @@
+#ifndef PBCX_H
+#define PBCX_H
+
 // The following ifdef block is the standard way of creating macros which make exporting 
 // from a DLL simpler. All files within this DLL are compiled with the PBCX_EXPORTS
 // symbol defined on the command line. This symbol should not be defined on any project
@@ -20,3 +23,5 @@
 //extern PBCX_API int nPBCX;
 //
 //PBCX_API int WINAPI fnPBCX(void);
+
+#endif
