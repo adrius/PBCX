@@ -1,0 +1,8 @@
+$PBExportHeader$CallDynamic.srf
+global type CallDynamic from function_object
+end type
+
+type prototypes
+global function any CallDynamic (powerobject apow_obj, readonly string as_method, ...) system library "PBCX.dll" alias for "CallDynamic"
+end prototypes
+

@@ -60,9 +60,13 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>Sources\PBCX.def</ModuleDefinitionFile>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies>Shlwapi.lib;pbvm100.lib;pbshr100.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y $(SolutionDir)Debug\PBCX.dll D:\DV\projects\PB\PBS
+xcopy /Y $(SolutionDir)Debug\PBCX.pdb D:\DV\projects\PB\PBS</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -83,6 +87,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="3rd\Orca\pborca.h" />
+    <ClInclude Include="Includes\pbvm.h" />
     <ClInclude Include="Sources\PBCX.h" />
     <ClInclude Include="Includes\stdafx.h" />
     <ClInclude Include="Includes\targetver.h" />
@@ -96,6 +101,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Sources\CallDynamic.cpp" />
     <ClCompile Include="Sources\Strings.cpp" />
     <ClCompile Include="Sources\PBCX.cpp" />
     <ClCompile Include="Includes\stdafx.cpp">

@@ -27,6 +27,9 @@
     <ClInclude Include="Sources\PBCX.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Includes\pbvm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Includes\stdafx.cpp">
@@ -39,6 +42,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Sources\Strings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\CallDynamic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
